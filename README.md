@@ -1,7 +1,7 @@
 # Bank-Database-Design
 
 # ER-Diagram:
-<img src="https://github.com/gmgyan/Bank-Database-Design_MS-SQL/blob/master/ER-Diagram.png">
+
 
 # Introduction:
 There are only two types of accounts at this time: Checking and Savings accounts. The provided column list should be separated into appropriate entities (tables) with relationships between these entities defined. The most efficient choices as far as your primary key constraints and foreign key constraints, and picked the appropriate data types for each of the columns.
