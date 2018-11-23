@@ -1,6 +1,7 @@
 # Bank-Database-Design
 
 # ER-Diagram:
+<img src="https://github.com/gmgyan/Bank-Database-Design_MS-SQL/blob/master/ER-Diagram.png?sanitize=true">
 ![](./ER-Diagram.png?raw=true)
 <img src="./ER-Diagram.png" alt="Smiley face" height="42" width="42">
 <img src = './ER-Diagram.png'>
