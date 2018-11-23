@@ -1,16 +1,15 @@
-MS-SQL PROJECT by Gyan Kumar G M
 
+/* ## MS-SQL PROJECT on Banking Transactions by Gyan Kumar GM ! */
 
-/**## MS-SQL PROJECT on Banking Transactions BEGINS! ##**/
-
-/** PROJECT PHASE 1 BEGINS **/
+-- PHASE I of project begins 
 
 --Q1. Create a database for a banking application called 'Bank'. 
 
 create database dbBankGM;
 GO
 
-/* NOTE: Unlike asked in question database name has been used as 'dbBankGM' instead of 'Bank' in order to make it unique from other students. Following code is used to select 'dbBankGM' as current database */
+/* NOTE: Unlike asked in question database name has been used as 'dbBankGM' instead of 'Bank' in order to make it unique 
+from other students. Following code is used to select 'dbBankGM' as current database */
 
 use dbBankGM;
 GO
@@ -43,10 +42,6 @@ CREATE TABLE UserSecurityQuestions
 GO
 
 
-
-
-
-
 --Creating table named AccountType
 CREATE TABLE AccountType
 (
@@ -57,7 +52,8 @@ CREATE TABLE AccountType
 GO
 
 --Creating table named SavingsInterestRates
-/*NOTE:  Altered the table to accept datatype as NUMERIC(9,2) in order to avoid Arithmetic Conversion error using code "ALTER TABLE SavingsInterestRates ALTER COLUMN IntetestRatesValue NUMERIC(9,2);" */
+/* NOTE:  Altered the table to accept datatype as NUMERIC(9,2) in order to avoid Arithmetic Conversion error using 
+code "ALTER TABLE SavingsInterestRates ALTER COLUMN IntetestRatesValue NUMERIC(9,2);" */
 CREATE TABLE SavingsInterestRates
 (
 	InterestSavingRatesID TINYINT NOT NULL IDENTITY(1,1),
@@ -357,7 +353,7 @@ insert into OverDraftLog values('2014/7/5 05:56:59', 15, 'Pending');
 insert into OverDraftLog values('2009/10/12 08:34:15', 20, 'Clear');
 
 
-/** PROJECT PHASE 2 BEGINS **/
+-- PHASE II of project begins
 
 --Q1. Create a view to get all customers with checking account from ON province. 
 
@@ -421,13 +417,6 @@ WHERE la.AccountID = '1'
 GO;
 
 
-
-
-
-
-
-
-
 --Q5. Create a view to get all customers� overdraft amount. 
 
 DROP VIEW VW_Customer_OD;
@@ -441,7 +430,7 @@ JOIN Customer c
 ON o.AccountID = c.AccountID;
 GO
 
---Q6. Create a stored procedure to add �User_� as a prefix to everyone�s login (username). 
+--Q6. Create a stored procedure to add "User_" as a prefix to everyone's login (username). 
 
 DROP PROCEDURE sp_Update_Login;
 GO
@@ -454,7 +443,7 @@ GO
 EXEC sp_Update_Login;
 GO
 
---Q7. Create a stored procedure that accepts AccountId as a parameter and returns customer�s full name. 
+--Q7. Create a stored procedure that accepts AccountId as a parameter and returns customer's full name. 
 
 DROP PROCEDURE sp_Customer_Details;
 GO
@@ -470,11 +459,6 @@ GO
 
 EXEC sp_Costumer_Details 2;
 GO
-
-
-
-
-
 
 
 --Q8. Create a stored procedure that returns error logs inserted in the last 24 hours. 
@@ -520,10 +504,6 @@ GO
 
 EXEC sp_Update_cBalance_After_Withdraw 3, 300;
 GO
-
-
-
-
 
 
 --Q11. Create a stored procedure to remove all security questions for a particular login. 
@@ -572,6 +552,3 @@ GO
 
 EXEC sp_Remove_Column;
 GO
-
-
-/**## MS-SQL PROJECT on Banking Transactions ENDS - Thank you!! ##**/
