@@ -1,21 +1,21 @@
 # Bank-Database-Design
 
-# ER-Diagram:
+### ER-Diagram:
+![image](https://github.com/gmgyan/Bank-Database-Design_MS-SQL/blob/master/ER-Diagram.png)
 
-
-# Introduction:
+### Introduction:
 There are only two types of accounts at this time: Checking and Savings accounts. The provided column list should be separated into appropriate entities (tables) with relationships between these entities defined. The most efficient choices as far as your primary key constraints and foreign key constraints, and picked the appropriate data types for each of the columns.
 
-# Project Goals:
+### Project Goals:
 The goal of the project is to understand database entities in more depth and have practical experience of working with different objects of SQL.
 
-# Phase 1:
+### Phase 1:
 1.  Create a database for a banking application called “Bank”. 
 2.  Create all the tables mentioned in the database diagram. 
 3.  Create all the constraints based on the database diagram. 
 4.  Insert at least 5 rows in each table.
 
-# Phase 2:
+### Phase 2:
 1.  Create a view to get all customers with checking account from ON province.
 2.  Create a view to get all customers with total account balance (including interest rate) greater than 5000.
 3.  Create a view to get counts of checking and savings accounts by customer.
