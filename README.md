@@ -1,6 +1,7 @@
 # Bank-Database-Design
 
 # ER-Diagram:
+![](./ER-Diagram.png?raw=true)
 <img src="./ER-Diagram.png" alt="Smiley face" height="42" width="42">
 <img src = './ER-Diagram.png'>
 
